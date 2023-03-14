@@ -6,9 +6,10 @@ export default function Home() {
 
     return (
         <>
+        <br />
         <Navbar />
+        <br />
         <Searchbar />
-        <Cardvideos />
         {/* cardvideos appear when search has been made useState  */}
         </>
     )

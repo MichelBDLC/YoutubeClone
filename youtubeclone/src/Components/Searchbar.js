@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+//import Cardvideos from "./Cardvideos";
 
 export default function Searchbar() {
 
@@ -11,19 +12,35 @@ export default function Searchbar() {
     //api data here.
     //funtion that intakes user input and fetches info with it 
 
+    // useEffect(() => {
+    //     
+    //     //function of the event listener of when user types in searchInput 
+    // }, []);
+
     function handlesearchInput(event) {
-        //event.preventDefault();
-        //whatever is typed to be fetched 
 
-        fetch(`https://youtube.googleapis.com/youtube/v3/search?q=${searchInput}&part=snippet&maxResults=10&key=${apiKey}`).then((response) => response.json())
-        
+        setSearchInput(event.target.value);
+        //console.log(event.target.value) SUCCESS
 
+        // fetch(`https://youtube.googleapis.com/youtube/v3/search?q=${searchInput}&part=snippet&maxResults=10&key=${apiKey}`)
+        // .then((response) => response.json())
+        // .then((searchInputData) => {
+        //     <Cardvideos searchInputData={searchInputData} />
+        // })
+        // .catch((error) => {
+        //     console.log(error);
+        // })
     }
 
     function searchButton(event) {
         event.preventDefault();
+        //we might use routing here
 
     }
+
+    //searchbutton once clicked to load results 
+
+    //types in on the search bar 
 
     return (
         <>
