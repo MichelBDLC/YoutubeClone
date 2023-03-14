@@ -1,4 +1,4 @@
-import './About.css'
+// import './About.css'
 
 export default function About() {
     return (
@@ -6,7 +6,7 @@ export default function About() {
             <div className='project-info'>
                 <h1>Youtube</h1>
                 <p>
-                    {/* insert our project info */}
+                   {/* insert project description here */}
                 </p>
             </div>
 
