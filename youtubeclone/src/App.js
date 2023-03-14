@@ -1,7 +1,6 @@
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // import './App.css';
-
 // function App() {
 //   return (
 //     <div className="App">
@@ -15,12 +14,16 @@
 //     //       <Route path="/" element={<Home />} />
 //     //       <Route path="/about" element={<About />} />
 //     //       <Route path="/videos/:id" element={<Video />} />
+import Home from "./Home/Home";
 
-//     //     </Routes>
-//     //     <Footer />
-//     //   </Router>
-//     // </div>
-//   );
-// }
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+       <p> TEST </p>
+      </header>
+    </div>
+  );
+}
 
 // export default App;
