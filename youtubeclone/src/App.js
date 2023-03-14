@@ -1,3 +1,9 @@
+// ajv_branch
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import  Nav  from './Components/Navbar'
+import About from './Components/About'
+
+// Develop
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import  Nav  from './Components/Navbar'
 import About from './Components/About'
@@ -9,13 +15,10 @@ import Youtube, { YouTubeProps, YouTubePlayer, YouTubeEvent }from "react-youtube
 function App() {
   return (
     <div className="App">
-      {/* <Router>
-        <Nav />
-        <Routes>
-          <Route element={<About />} path='/about' />
-        </Routes>
-      </Router> */}
-      <Home Youtube={Youtube} />
+      <Home />
+      {/* <header className="App-header">
+
+      </header> */}
     </div>
   );
 }
