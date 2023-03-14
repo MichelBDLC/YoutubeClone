@@ -7,16 +7,16 @@ import Searchbar from './Components/Searchbar';
 function App() {
   return (
     <div className="App">
+      
       <Router>
-        <Navbar />
-        <Searchbar />
+      <Navbar />
         <Routes>
           <Route path='/about' element={<About />}  />
         </Routes>
       </Router>
-      <header className="App-header">
-       <p> </p>
-      </header>
+      <Searchbar />
+
+
     </div>
   );
 }
