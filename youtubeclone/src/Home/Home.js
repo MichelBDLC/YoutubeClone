@@ -3,7 +3,7 @@ import Searchbar from "../Components/Searchbar";
 import Cardvideos from "../Components/Cardvideos";
 import { useState } from "react";
 
-export default function Home() {
+export default function Home(props) {
 
     const [showResults, setShowResults] = useState(false);
     //use UseEffect to show results once search is made/ search button is clicked and data is successfully 
@@ -14,9 +14,10 @@ export default function Home() {
         <br />
         <Navbar />
         <br />
-        <Searchbar />
+        <Searchbar Youtube={props.Youtube}/>
         <div>
-        {/* cardvideos appear when search has been made useState  */}
+        {/* <Cardvideos />
+        cardvideos appear when search has been made useState  */}
         </div>
         </>
     )

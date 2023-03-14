@@ -1,19 +1,23 @@
 import { useEffect, useState } from "react";
 
-export default function Searchbar() {
+export default function Searchbar(props) {
 
     const [searchInput, setSearchInput] = useState("");
 
     const [theVideoTitle, setTheVideoTitle] = useState("");
 
-    const apiKey = `AIzaSyB_js3m_6Td1BiAELR-giue7aIRmzHegEM`;
+    const [theResponse, setTheResponse] = useState([]);
+
+    const apiKey = `AIzaSyBglTz4vKrPMqfU4Hown-Obm-J3QSa6XS8`;
 
     //maybe make an object useState for displaying card video data 
+
+    //get one full videocard workingthensend overto cardvideosthensendover to cardvideomaybe you'll find the solution somewhere
+    //along the lines
 
     function handlesearchInput(event) {
 
         setSearchInput(event.target.value);
-        //console.log(event.target.value) SUCCESS
     }
 
     const apiSearchUrl = `https://youtube.googleapis.com/youtube/v3/search?q=` + searchInput + `&part=snippet&maxResults=10&key=` + apiKey;
@@ -28,42 +32,19 @@ export default function Searchbar() {
 
     function searchButton(event) {
         event.preventDefault();
-        //we might use routing here
 
-        fetch(`https://youtube.googleapis.com/youtube/v3/search?q=${searchInput}&part=snippet&maxResults=10&key=${apiKey}`)
+        fetch(apiSearchUrl)
         .then((response) => response.json())
         .then((searchInputData) => {
 
-            console.log(searchInputData);
-            // <Cardvideos searchInputData={searchInputData} />
-            //then we generate the results
-            // searchInputData.items[0].map((video) => {
-            //     //deconstruct here?
-            //     //you need videoId
-            //     //define some tings 
-
-            //     let videoId = video.id.videoId;
-            //     let videoTitle = video.snippet.title;
-            //     let videoDescription = video.snippet.description;
-            //     let videoChannelTitle = video.snippet.channelTitle;
-            //     let videoThumbnail = video.snippet.thumbnails.default.url;
-
-            //     setTheVideoTitle(videoTitle);
-
-            //     //do sets here to showcase data
-
-            //     //pass this data to card videos and then individual data to cardvideo 
-            //     //finish the code here though, make sure it works then move on to move the data accross components
-            // }) 
+            setTheResponse(searchInputData.items);
         })
         .catch((error) => {
             console.log(error);
         })
     }
 
-    //searchbutton once clicked to load results 
-
-    //types in on the search bar 
+    //function that displays search results 
 
     return (
         <>
@@ -71,7 +52,32 @@ export default function Searchbar() {
         <button type="submit" onClick={searchButton}> Search </button>
         <br />
         <div>
-            <p> {theVideoTitle} </p>
+            {
+            theResponse.map((video) => {
+
+
+                //only showing one result, try doing without useState 
+
+                let videoId = video.id.videoId;
+                let videoTitle = video.snippet.title;
+                let videoDescription = video.snippet.description;
+                let videoChannelTitle = video.snippet.channelTitle;
+                let videoThumbnail = video.snippet.thumbnails.default.url;
+
+                //setTheVideoTitle(videoTitle);
+
+                return (
+                    <>
+                    <p> {videoTitle} </p>
+                    </>
+                )
+
+                //pass this data to card videos and then individual data to cardvideo 
+                //finish the code here though, make sure it works then move on to move the data accross components
+            }) 
+            }
+            {/* <img src={videoThumbnail} /> */}
+            {/* <p> {theVideoTitle} </p>  */}
         {/* <Cardvideos /> */}
         </div>
         </>
