@@ -2,21 +2,21 @@ import { useState } from "react";
 
 export default function Cardvideos() {
 
-    const [searchStatus, setSearchStatus] = useState("Make a search to watch videos");
+    //const [searchStatus, setSearchStatus] = useState("Make a search to watch videos");
 
-    const [searchMade, setSearchMade] = useState(false);
+    //const [searchMade, setSearchMade] = useState(false);
 
-    if (searchMade == true) {
+    // if (searchMade == true) {
 
-        setSearchMade(true);
-        setSearchStatus("Search Results:");
-    }
+    //     setSearchMade(true);
+    //     setSearchStatus("Search Results:");
+    // }
 
     //generates individual Cardvideo 
 
     return (
         <>
-        <h2> {searchStatus} </h2>
+        {/* <h2> {searchStatus} </h2> */}
         </>
     )
 }
