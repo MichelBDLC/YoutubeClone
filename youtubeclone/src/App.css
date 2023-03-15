@@ -1,39 +1,120 @@
-
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.about-wrapper {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  * {
+    color: red;
+    text-shadow: 2px 2px #f4eff0;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .project-description {
+    margin: auto;
+    width: 50%;
+    align-items: center;
+  
+    justify-content: center;
+    grid-column: 1 / span end;
+    background-color: #ff0116;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
-} */
+  
+  .project-description * {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #ffffff;
+  }
+  
+  .project-description p {
+    padding-bottom: 20px;
+  }
+  
+  .michel-dev {
+    grid-row: 2/4;
+    grid-column: 1/2;
+  }
+  
+  .michel-dev p {
+    width: 20%;
+    margin: auto;
+    background-color: #e2c2a2;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .max-dev {
+    grid-row: 2/4;
+    grid-column: 1/3;
+  }
+  
+  .max-dev p {
+    width: 20%;
+    margin: auto;
+    background-color: #e2c2a2;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .angel-dev {
+    grid-row: 2/4;
+    grid-column: 2;
+  }
+  
+  .angel-dev p {
+    width: 20%;
+    margin: auto;
+    background-color: #e2c2a2;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .max-img img {
+    background-color: #ff6b01;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+    justify-content: center;
+    margin: auto;
+    height: 250px;
+  }
+  
+  .michel-img img {
+    background-color: #ff6b01;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+    justify-content: center;
+    margin: auto;
+    height: 250px;
+  }
+
+  .angel-img img {
+    background-color: #ff6b01;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+    justify-content: center;
+    margin: auto;
+    height: 250px;
+  }
+  
+  .michel-dev a {
+    background-color: #ff6b01;
+    text-decoration:wavy;
+  }
+  
+  .max-dev a {
+    background-color: #ff6b01;
+    text-decoration:wavy;
+  }
+
+  .angel-dev a {
+    background-color: #ff6b01;
+    text-decoration:wavy;
+  }
+  

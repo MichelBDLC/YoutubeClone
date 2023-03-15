@@ -1,29 +1,28 @@
-
 export default function About() {
     return (
       <div className="about-wrapper">
         <div className="project-description">
           <h1>YouTube Clone Project</h1>
           <p>
-          {/* project bio */}
+            Testing
           </p>
         </div>
   
-        <div className="dev 1">
-          <img src="devphoto1" alt="" />
+        <div className="michel-dev">
+          <img src="michel-img" alt="" />
           <p>
-             {/* insert dev bio here */}
-            <br />
+          testing  
+          <br />
             {/* <a href="">>GitHub</a> */}
             <br />
             {/* <a href="">>LinkedIn</a> */}
           </p>
         </div>
   
-        <div className="dev 2">
-          <img src="devphoto2" alt="" />
+        <div className="max-dev">
+          <img src="max-img" alt="" />
           <p>
-            {/* insert dev bio here */}
+            testing
             <br />
             {/* </p><a href''=>>GitHub</a> */}
             <br />
@@ -31,11 +30,11 @@ export default function About() {
           </p>
         </div>
   
-        <div className="dev 3">
-          <img src="devphoto3" alt='' />
+        <div className="angel-dev">
+          <img src="angel-img" alt='' />
           <p>
-              {/* insert devi bio here */}
-              <br/>
+           Testing              
+           <br/>
               {/* <a href=""=>>GitHub</a> */}
               <br/>
               {/* <a href=""=>LinkedIn</a> */}

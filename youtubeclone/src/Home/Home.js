@@ -1,6 +1,6 @@
 import Navbar from "../Components/Navbar";
 import Searchbar from "../Components/Searchbar";
-import Cardvideos from "../Components/Cardvideos";
+// import Cardvideos from "../Components/Cardvideos";
 import { useState } from "react";
 
 export default function Home(props) {
@@ -11,9 +11,9 @@ export default function Home(props) {
 
     return (
         <>
-        <br />
-        <Navbar />
-        <br />
+        {/* <br /> */}
+        {/* <br /> */}
+    
         <Searchbar Youtube={props.Youtube}/>
         <div>
         {/* <Cardvideos />

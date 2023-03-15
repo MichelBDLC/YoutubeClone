@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Searchbar from "./Searchbar";
 
 
 export default function Nav() {
@@ -20,8 +21,12 @@ export default function Nav() {
           <li>
             <Link to='/about'>About</Link>
           </li>
+          <li>
+            <Searchbar />
+          </li>
         </ul>
       </nav>
+      
     </header>
   )
 }
