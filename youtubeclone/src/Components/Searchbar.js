@@ -1,6 +1,7 @@
 import { useState } from "react";
+import Cardvideos from "./Cardvideos";
 
-export default function Searchbar(props) {
+export default function Searchbar() {
 
     const [searchInput, setSearchInput] = useState("");
 
@@ -8,20 +9,19 @@ export default function Searchbar(props) {
 
     const apiKey = `AIzaSyBglTz4vKrPMqfU4Hown-Obm-J3QSa6XS8`;
 
-    //maybe make an object useState for displaying card video data 
-
-    //get one full videocard workingthensend overto cardvideosthensendover to cardvideomaybe you'll find the solution somewhere
-    //along the lines
-
     function handlesearchInput(event) {
 
         setSearchInput(event.target.value);
+
+        //you can showcase a search with every key pressed here with a filter function 
+        //and using useState with displaying what comes up using the filter function 
+        //it might also be easier to use UseEffect 
+        
     }
 
     const apiSearchUrl = `https://youtube.googleapis.com/youtube/v3/search?q=` + searchInput + `&part=snippet&maxResults=10&key=` + apiKey;
 
     //api data here.
-    //funtion that intakes user input and fetches info with it 
 
     // useEffect(() => {
     //     
@@ -40,46 +40,18 @@ export default function Searchbar(props) {
         .catch((error) => {
             console.log(error);
         })
+        //you can use thisto change search statusand therefore displayvideos
+        //and make message on screen disappear
+        //orr youcan useEffect
     }
 
-    //function that displays search results 
-
     return (
-        // videocards
         <>
-        <input type="text" onKeyUp={(event) => handlesearchInput(event)} />
-        <button type="submit" onClick={searchButton}> Search </button>
+        {/* <h2> {searchStatus} </h2> */}
+        <input type="text" onKeyUp={(event) => handlesearchInput(event)} placeholder="Let's Watch..." />
+        <button onClick={searchButton}> Search </button>
         <br />
-        <div>
-            {
-            theResponse.map((video) => {
-
-
-                //only showing one result, try doing without useState 
-
-                let videoId = video.id.videoId;
-                let videoTitle = video.snippet.title;
-                let videoDescription = video.snippet.description;
-                let videoChannelTitle = video.snippet.channelTitle;
-                let videoThumbnail = video.snippet.thumbnails.default.url;
-
-                //setTheVideoTitle(videoTitle);
-
-                return (
-                    // videocard
-                    <div id={videoId}>
-                    <img src={videoThumbnail} />
-                    <strong> {videoTitle} </strong>
-                    <p> {videoChannelTitle} </p>
-                    <p> {videoDescription} </p>
-                    </div>
-                )
-
-                //pass this data to card videos and then individual data to cardvideo 
-                //finish the code here though, make sure it works then move on to move the data accross components
-            }) 
-            }
-        </div>
+        <Cardvideos handlesearchInput={handlesearchInput} searchButton={searchButton} theResponse={theResponse}/>
         </>
     )
 }
