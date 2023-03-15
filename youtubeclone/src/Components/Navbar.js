@@ -26,3 +26,9 @@ export default function Nav() {
   )
 }
 
+    return (
+        <>
+        {/* links to homepage & About page routing */}
+        </>
+    )
+}
