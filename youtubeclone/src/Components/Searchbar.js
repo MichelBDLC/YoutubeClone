@@ -1,10 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Searchbar(props) {
 
     const [searchInput, setSearchInput] = useState("");
-
-    const [theVideoTitle, setTheVideoTitle] = useState("");
 
     const [theResponse, setTheResponse] = useState([]);
 
@@ -47,6 +45,7 @@ export default function Searchbar(props) {
     //function that displays search results 
 
     return (
+        // videocards
         <>
         <input type="text" onKeyUp={(event) => handlesearchInput(event)} />
         <button type="submit" onClick={searchButton}> Search </button>
@@ -67,18 +66,19 @@ export default function Searchbar(props) {
                 //setTheVideoTitle(videoTitle);
 
                 return (
-                    <>
-                    <p> {videoTitle} </p>
-                    </>
+                    // videocard
+                    <div id={videoId}>
+                    <img src={videoThumbnail} />
+                    <strong> {videoTitle} </strong>
+                    <p> {videoChannelTitle} </p>
+                    <p> {videoDescription} </p>
+                    </div>
                 )
 
                 //pass this data to card videos and then individual data to cardvideo 
                 //finish the code here though, make sure it works then move on to move the data accross components
             }) 
             }
-            {/* <img src={videoThumbnail} /> */}
-            {/* <p> {theVideoTitle} </p>  */}
-        {/* <Cardvideos /> */}
         </div>
         </>
     )
