@@ -7,7 +7,8 @@ export default function Search() {
 
     const [theResponse, setTheResponse] = useState([]);
 
-    const apiKey = `AIzaSyAHGj75TWuLXdfB8r2931DFxiRySiJ02Oc`;
+    const apiKey = `AIzaSyDTcwDfYYCxntYE5DC7S_ucdVtmivdh0u8`;
+    //CHANGE KEYYYY
 
     function handlesearchInput(event) {
 
@@ -17,17 +18,17 @@ export default function Search() {
 
     const apiSearchUrl = `https://youtube.googleapis.com/youtube/v3/search?q=` + searchInput + `&part=snippet&maxResults=10&key=` + apiKey;
 
-    useEffect(() => {
-        fetch(apiSearchUrl)
-        .then((response) => response.json())
-        .then((searchInputData) => {
+    // useEffect(() => {
+    //     fetch(apiSearchUrl)
+    //     .then((response) => response.json())
+    //     .then((searchInputData) => {
 
-            setTheResponse(searchInputData.items);
-        })
-        .catch((error) => {
-            console.log(error);
-        })
-    }, [searchInput]); //this showcases the most popular or some random videos on page load 
+    //         setTheResponse(searchInputData.items);
+    //     })
+    //     .catch((error) => {
+    //         console.log(error);
+    //     })
+    // }, [searchInput]); //this showcases the most popular or some random videos on page load 
 
     function searchButton(event) {
         event.preventDefault();
@@ -36,7 +37,7 @@ export default function Search() {
         .then((response) => response.json())
         .then((searchInputData) => {
 
-            setTheResponse(searchInputData.items);
+            setTheResponse(searchInputData.items[0]);
         })
         .catch((error) => {
             console.log(error);
