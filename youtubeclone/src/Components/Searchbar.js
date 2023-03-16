@@ -2,88 +2,84 @@ import { useState } from "react";
 import "./SearchBar.css";
 
 export default function Searchbar(props) {
-  const [searchInput, setSearchInput] = useState("");
 
-  const [theResponse, setTheResponse] = useState([]);
+    const [theResponse, setTheResponse] = useState([]);
+    const [searchInput, setSearchInput] = useState([])
 
-  const apiKey = `AIzaSyBglTz4vKrPMqfU4Hown-Obm-J3QSa6XS8`;
+    const apiKey = `AIzaSyDkl7o6yIOHtrFBGnoq4GXo9IzDBV6EPrw`;
 
-  //maybe make an object useState for displaying card video data
+    //maybe make an object useState for displaying card video data 
 
-  //get one full videocard workingthensend overto cardvideosthensendover to cardvideomaybe you'll find the solution somewhere
-  //along the lines
+    //get one full videocard workingthensend overto cardvideosthensendover to cardvideomaybe you'll find the solution somewhere
+    //along the lines
 
-  function handlesearchInput(event) {
-    setSearchInput(event.target.value);
-  }
+    function handlesearchInput(event) {
 
-  const apiSearchUrl =
-    `https://youtube.googleapis.com/youtube/v3/search?q=` +
-    searchInput +
-    `&part=snippet&maxResults=10&key=` +
-    apiKey;
+        setSearchInput(event.target.value);
+    }
 
-  //api data here.
-  //funtion that intakes user input and fetches info with it
+    const apiSearchUrl = `https://youtube.googleapis.com/youtube/v3/search?q=` + searchInput + `&part=snippet&maxResults=10&key=` + apiKey;
 
-  // useEffect(() => {
-  //
-  //     //function of the event listener of when user types in searchInput
-  // }, []);
+    //api data here.
+    //funtion that intakes user input and fetches info with it 
 
-  function searchButton(event) {
-    event.preventDefault();
+    // useEffect(() => {
+    //     
+    //     //function of the event listener of when user types in searchInput 
+    // }, []);
 
-    fetch(apiSearchUrl)
-      .then((response) => response.json())
-      .then((searchInputData) => {
-        setTheResponse(searchInputData.items);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }
+    function searchButton(event) {
+        event.preventDefault();
 
-  //function that displays search results
+        fetch(apiSearchUrl)
+        .then((response) => response.json())
+        .then((searchInputData) => {
 
-  return (
-    // videocards
-    <>
-      <input type="text" onKeyUp={(event) => handlesearchInput(event)} />
-      <button type="submit" onClick={searchButton}>
-        {" "}
-        Search{" "}
-      </button>
-      <br />
-      <br></br>
-      <div className="cards">
-        {theResponse.map((video) => {
-          //only showing one result, try doing without useState
+            setTheResponse(searchInputData.items);
+        })
+        .catch((error) => {
+            console.log(error);
+        })
+    }
 
-          let videoId = video.id.videoId;
-          let videoTitle = video.snippet.title;
-          // let videoDescription = video.snippet.description;
-          // let videoChannelTitle = video.snippet.channelTitle;
-          let videoThumbnail = video.snippet.thumbnails.high.url;
+    //function that displays search results 
 
-          //setTheVideoTitle(videoTitle);
+    return (
+        // videocards
+        <>
+        <input type="text" onKeyUp={(event) => handlesearchInput(event)} />
+        <button type="submit" onClick={searchButton}> Search </button>
+        <br />
+        <div className="cards">
+            {
+            theResponse.map((video) => {
 
-          return (
-            // videocard
-            <div id={videoId} className="card">
-              <img src={videoThumbnail} />
 
-              <strong> {videoTitle} </strong>
-              {/* <p> {videoChannelTitle} </p> */}
-              {/* <p> {videoDescription} </p> */}
-              
-            </div>
-          );
+                //only showing one result, try doing without useState 
 
-          //pass this data to card videos and then individual data to cardvideo
-          //finish the code here though, make sure it works then move on to move the data accross components
-        })}
-      </div>
-    </>
-  );
+                let videoId = video.id.videoId;
+                let videoTitle = video.snippet.title;
+                // let videoDescription = video.snippet.description;
+                // let videoChannelTitle = video.snippet.channelTitle;
+                let videoThumbnail = video.snippet.thumbnails.default.url;
+
+                //setTheVideoTitle(videoTitle);
+
+                return (
+                    // videocard
+                    <div id={videoId} className="card">
+                    <img src={videoThumbnail} />
+                    <strong> {videoTitle} </strong>
+                    {/* <p> {videoChannelTitle} </p>
+                    <p> {videoDescription} </p> */}
+                    </div>
+                )
+
+                //pass this data to card videos and then individual data to cardvideo 
+                //finish the code here though, make sure it works then move on to move the data accross components
+            }) 
+            }
+        </div>
+        </>
+    )
 }

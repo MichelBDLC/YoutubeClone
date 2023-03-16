@@ -16,7 +16,11 @@ input {
     border-radius: 1px;
 }
 
-
+div .cards {
+    display: grid;
+    grid-template-columns: auto auto;
+   
+}
 
 div .card {
     display: grid;
@@ -29,7 +33,7 @@ div .card {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 40px;
-    max-width: 420px;
+    max-width: 400px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-family: "Roboto","Arial",sans-serif;
     font-size: 1.1rem;
