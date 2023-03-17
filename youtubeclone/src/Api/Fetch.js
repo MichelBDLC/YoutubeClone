@@ -4,6 +4,11 @@ export default function fetch() {
 
     const apiSearchUrl = `https://youtube.googleapis.com/youtube/v3/search?q=` + searchInput + `&part=snippet&maxResults=10&key=` + apiKey;
 
+    //you can have the api keys here and gitignore without having to 
+    //use .env
+
+    //const apiSearchUrl = `https://youtube.googleapis.com/youtube/v3/search?q=` + searchInput + `&part=snippet&maxResults=10&key=` + apiKey;
+
     return (
         <>
         </>
