@@ -21,6 +21,7 @@ function App() {
     //     <Footer />
     //   </Router>
     <div className="App">
+      
       <Home />
       {/* <header className="App-header">
 

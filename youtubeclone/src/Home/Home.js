@@ -11,6 +11,7 @@ export default function Home(props) {
 
     return (
         <>
+        
         <br />
         <Navbar />
         <br />
