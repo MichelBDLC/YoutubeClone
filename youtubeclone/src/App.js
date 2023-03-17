@@ -11,7 +11,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar'
 import About from './Home/About'
 import './App.css';
-import Searchbar from './Components/Searchbar';
 
 function App() {
   return (
@@ -23,7 +22,6 @@ function App() {
           <Route path='/about' element={<About />}  />
         </Routes>
       </Router>
-      <Searchbar />
 
 
       <Navbar />
