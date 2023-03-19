@@ -26,6 +26,9 @@ header article span {
     padding-bottom: 25px;
 
 }
+header article span:hover {
+    color: white;
+}
 
 header article a {
     color: white;
