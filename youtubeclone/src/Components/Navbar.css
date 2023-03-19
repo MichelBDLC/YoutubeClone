@@ -13,6 +13,11 @@ img {
     border-style: solid;
     border-width: thin;
     border-color: whitesmoke;
+    margin-right: 20px;
+}
+div .navigation span {
+color: black;
+text-decoration: none;
 }
 
 /* header ul {
