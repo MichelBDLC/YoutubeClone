@@ -1,45 +1,21 @@
-// import { useState, useEffect } from "react";
-// import { Link, useParams } from "react-router-dom";
-// import ReactPlayer from "react-player/youtube";
-// //import { Box, Stack } from "mui/material";
-// import Video from "./Video";
-// import videoId from "./Cardvideos";
+import { useNavigate, useLocation } from "react-router-dom";
 
-// export default function VideoAction() {
+export default function VideoAction() {
 
-//     const [videoDetail, setVideoDetail] = useState(null);
+     const navigate = useNavigate();
 
-//     videoId = useParams();
-//     //console.log(videoId) I beleive this was a success
+     const location = useLocation();
 
-//     const apiKey = `AIzaSyAHGj75TWuLXdfB8r2931DFxiRySiJ02Oc`;
+    return (
+        <>
+        <button onClick={() => navigate(-1)}> Go Back </button>
+        <div>
+        <h2> {location.state.videoTitle} </h2>
+        {/* the video itself here */}
+        <p> {location.state.videoChannel} </p>
+        <p> {location.state.videoDescription} </p>
+        </div>
+        </>
+    )
+}
 
-//     let videoDataApi = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet,statistics&id=${videoId}&key=${apiKey}`;
-
-//     useEffect(() => {
-//         fetch(videoDataApi)
-//         .then((response) => response.json())
-//         .then((videoData) => {
-
-//             setVideoDetail(videoData.items[0])
-//         })
-//         .catch((error) => {
-//             console.log(error);
-//         })
-//     }, [videoId])
-
-//     if(!videoDetail?.snippet) {
-
-//         return "Loading...";
-//     } 
-
-//     return (
-//         <>
-//         <div flex={1}>
-//             <div>
-//                 <ReactPlayer url={`https://www.youtube.com/watch?v=${videoId}`} className="react-player" controls />
-//             </div>
-//         </div> 
-//         </>
-//     )
-// }
