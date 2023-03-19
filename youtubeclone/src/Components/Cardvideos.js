@@ -3,8 +3,6 @@ import "./Search.css"
 
 export default function Cardvideos(props) {
 
-    console.log(props.theResponse)
-
     return (
         <>
             {
