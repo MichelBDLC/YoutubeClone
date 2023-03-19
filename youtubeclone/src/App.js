@@ -1,3 +1,4 @@
+
 import './App.css';
 //import { BrowserRouter, Router, Routes, Route } from 'react-router-dom';
 import Search from './Components/Search';
@@ -13,6 +14,17 @@ import About from './Home/About'
 
 function App() {
   return (
+    // <div className="wrapper">
+    //   <Router>
+    //     <Nav />
+    //     <Routes>
+    //       <Route path="/" element={<Home />} />
+    //       <Route path="/about" element={<About />} />
+    //       <Route path="/videos/:id" element={<Video />} />
+
+    //     </Routes>
+    //     <Footer />
+    //   </Router>
     <div className="App">
       
       <Router>
