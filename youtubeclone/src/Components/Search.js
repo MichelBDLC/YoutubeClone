@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Cardvideos from "./Cardvideos";
+import './Search.css';
 
 export default function Search() {
 
@@ -37,7 +38,6 @@ export default function Search() {
         .then((searchInputData) => {
 
             setTheResponse(searchInputData.items);
-            //console.log(theResponse)
         })
         .catch((error) => {
             console.log(error);

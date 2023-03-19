@@ -1,4 +1,5 @@
 // import './About.css'
+import img from './IMG_9882.JPG';
 
 export default function About() {
     return (
@@ -30,11 +31,12 @@ export default function About() {
             </div>
 
             <div className="about-Michel">
-                <h2> Student 3 </h2>
-                {/* <img insert img of me here /> */}
+                <h2> Michel Batista </h2>
+                <img src={img}/>
                 <p>
                    {/* insert project description here
                    inlcude social media links (linkedin, github)*/}
+                   <a href='https://github.com/MichelBDLC'> Github </a>
                 </p>
             </div>
         </div>
