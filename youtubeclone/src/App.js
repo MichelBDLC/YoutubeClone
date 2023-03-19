@@ -5,10 +5,13 @@ import About from "./Components/About";
 import NoRoute from './Components/NoRoute';
 import './App.css';
 import VideoAction from './Components/VideoAction';
+import Search from './Components/Search';
 
 function App() {
   return (
-    <>
+
+    <div>
+
       <Navbar />
       <br />
       <Routes>
@@ -17,7 +20,9 @@ function App() {
         <Route path='/VideoAction' element={<VideoAction />} />
         <Route path='*' element={<NoRoute />} />
       </Routes>
-    </>
+    
+    </div>
+    
   )
 }
 
