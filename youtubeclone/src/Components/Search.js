@@ -7,8 +7,7 @@ export default function Search() {
 
     const [theResponse, setTheResponse] = useState([]);
 
-    const apiKey = `AIzaSyDTcwDfYYCxntYE5DC7S_ucdVtmivdh0u8`;
-    //CHANGE KEYYYY
+    const apiKey = `AIzaSyBglTz4vKrPMqfU4Hown-Obm-J3QSa6XS8`;
 
     function handlesearchInput(event) {
 
@@ -37,7 +36,8 @@ export default function Search() {
         .then((response) => response.json())
         .then((searchInputData) => {
 
-            setTheResponse(searchInputData.items[0]);
+            setTheResponse(searchInputData.items);
+            //console.log(theResponse)
         })
         .catch((error) => {
             console.log(error);
@@ -46,11 +46,11 @@ export default function Search() {
 
     return (
         <>
-        <input className="search-bar" type="text" onKeyUp={(event) => handlesearchInput(event)} placeholder="What would you like to watch?" />
+        <input className="search-bar" type="search" onKeyUp={(event) => handlesearchInput(event)} placeholder="What would you like to watch?" />
         <button onClick={searchButton}> Search </button>
         <br />
         <div>
-            <Cardvideos handlesearchInput={handlesearchInput} searchButton={searchButton} theResponse={theResponse}/>
+            <Cardvideos handlesearchInput={handlesearchInput} searchButton={searchButton} theResponse={theResponse} apiKey={apiKey}/>
         </div>
         </>
     )
