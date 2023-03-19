@@ -16,9 +16,10 @@ export default function Video(props) {
     };
 
     return (
-        <div className="cards">
+        <div className="card2">
             <Card>
             <NavLink to="/VideoAction" state={dataTransfer}> <img src={props.videoThumbnail} alt={props.videoTitle} className="card-img" /> </NavLink>
+            <br></br>
             <NavLink to="/VideoAction" state={dataTransfer}> <strong> {props.videoTitle} </strong> </NavLink>
             </Card>
         </div>

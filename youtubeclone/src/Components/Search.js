@@ -49,7 +49,7 @@ export default function Search() {
         <input className="search-bar" type="search" onKeyUp={(event) => handlesearchInput(event)} placeholder="What would you like to watch?" />
         <button onClick={searchButton}> Search </button>
         <br />
-        <div className="cards">
+        <div className="card">
             <Cardvideos handlesearchInput={handlesearchInput} searchButton={searchButton} theResponse={theResponse} apiKey={apiKey}/>
         </div>
         </>

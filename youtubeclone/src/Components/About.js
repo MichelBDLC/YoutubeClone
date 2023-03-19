@@ -22,7 +22,7 @@ export default function About() {
             </div>
 
             <div className='about-max'>
-                <h2> Student 2 </h2>
+                <h2> Max Wattanachaiyot </h2>
                 {/* <img insert img of me here /> */}
                 <p>
                     {/* insert small bio of me here

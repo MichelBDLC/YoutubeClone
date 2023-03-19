@@ -1,3 +1,6 @@
+div .input .search-bar {
+    justify-content: center;
+}
 
 button {
     Background-color: red;
@@ -5,8 +8,9 @@ button {
     Margin: 1px;
     /* font-family:"Roboto","Arial",sans-serif; */
     font-size: 1rem;
-    /* border-radius: 5px; */
+    border-radius: 5px;
     height: 25px;  
+    
 }
 
 button:hover {
@@ -17,11 +21,13 @@ input {
     width: 420px;
     height: 20px;
     border-radius: 1px;
+    
 }
 
 .card-img {
     display: grid;
     grid-template-columns: auto auto;
+    
 }
 
 .card-img {
@@ -42,7 +48,7 @@ input {
     border-radius: 20px;
 }
 
-.card-img {
+a .card-img {
     border-radius: 30px;
     width: 50%;
 } 

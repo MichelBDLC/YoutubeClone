@@ -1,4 +1,5 @@
 import Video from "./Video";
+import "./Search.css"
 
 export default function Cardvideos(props) {
 
@@ -16,7 +17,7 @@ export default function Cardvideos(props) {
                 let videoThumbnail = video.snippet.thumbnails.default.url;
 
                 return (
-                    <div key={Math.random()}>
+                    <div key={Math.random()} classname="card">
                     <Video videoId={videoId} video={video} apiKey={props.apiKey} videoThumbnail={videoThumbnail} videoTitle={videoTitle}
                      videoDescription={videoDescription} videoChannel={videoChannel}/>
                     </div>
