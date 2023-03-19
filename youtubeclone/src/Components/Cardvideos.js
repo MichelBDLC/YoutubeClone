@@ -2,8 +2,6 @@ import Video from "./Video";
 
 export default function Cardvideos(props) {
 
-    console.log(props.theResponse)
-
     return (
         <>
             {
