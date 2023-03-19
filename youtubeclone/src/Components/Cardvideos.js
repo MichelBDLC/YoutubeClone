@@ -16,6 +16,7 @@ export default function Cardvideos(props) {
 
                 return (
                     <div key={Math.random()} classname="card">
+                    <br />
                     <Video videoId={videoId} video={video} apiKey={props.apiKey} videoThumbnail={videoThumbnail} videoTitle={videoTitle}
                      videoDescription={videoDescription} videoChannel={videoChannel}/>
                     </div>

@@ -8,7 +8,7 @@ export default function Search() {
 
     const [theResponse, setTheResponse] = useState([]);
 
-    const apiKey = `AIzaSyDkl7o6yIOHtrFBGnoq4GXo9IzDBV6EPrw`;
+    const apiKey = `AIzaSyCeo8g49s2maafEoDNp3TxVfAPcABkRzI4`;
 
     function handlesearchInput(event) {
 
