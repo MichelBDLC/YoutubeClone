@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-
-//is Card neccessary? TBD
+import './Search.css';
+import { Card } from "@mui/material";
 
 export default function Video(props) {
 
@@ -16,9 +16,11 @@ export default function Video(props) {
     };
 
     return (
-        <div className="videos">
-        <NavLink to="/VideoAction" state={dataTransfer}> <img src={props.videoThumbnail} alt={props.videoTitle} /> </NavLink>
-        <NavLink to="/VideoAction" state={dataTransfer}> <strong> {props.videoTitle} </strong> </NavLink>
+        <div className="cards">
+            <Card>
+            <NavLink to="/VideoAction" state={dataTransfer}> <img src={props.videoThumbnail} alt={props.videoTitle} className="card-img" /> </NavLink>
+            <NavLink to="/VideoAction" state={dataTransfer}> <strong> {props.videoTitle} </strong> </NavLink>
+            </Card>
         </div>
     )
 }

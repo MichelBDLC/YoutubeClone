@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Cardvideos from "./Cardvideos";
+import './Search.css';
 
 export default function Search() {
 
