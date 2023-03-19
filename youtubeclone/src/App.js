@@ -1,20 +1,24 @@
+import { Route, Routes } from 'react-router-dom';
+import Navbar from './Components/Navbar';
+import Home from './Components/Home';
+import About from "./Components/About";
+import NoRoute from './Components/NoRoute';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import  Nav  from './Components/Navbar'
-import About from './Components/About'
-import Home from "./Home/Home";
-import Fetch from "./Api/Fetch";
-import Youtube, { YouTubeProps, YouTubePlayer, YouTubeEvent }from "react-youtube";
+import VideoAction from './Components/VideoAction';
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-      {/* <header className="App-header">
-
-      </header> */}
-    </div>
-  );
+    <>
+      <Navbar />
+      <br />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/About' element={<About />} />
+        <Route path='/VideoAction' element={<VideoAction />} />
+        <Route path='*' element={<NoRoute />} />
+      </Routes>
+    </>
+  )
 }
 
 export default App;
