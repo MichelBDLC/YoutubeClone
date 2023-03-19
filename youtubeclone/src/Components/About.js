@@ -7,24 +7,23 @@ export default function About() {
     return (
         <div className='about-page'>
             <div className='project-info'>
-                <h2> About Project </h2>
+                <h1>About Project</h1>
                 <p>
-                   This Project.....................................
+                   This Youtube Clone Project was build by the following Developers, who through trial and error perservered on deploying this on time... 
                 </p>
             </div>
           <div className='about-card'>
             <div className='about-angel'>
                 <h2>Angel Villa</h2>
+                <a href='https://github.com/ajvee'>Github</a>
                 <img src={AngelVilla} alt="Angel-img" width={150}></img>
                 <div className='bio-card'>
                 <p>
-                   I am a future full stack software developer that resides in Queens, NY. I am currently studying at Pursuit, where I look forward to honing my skills.                 
-                <a href='https://github.com/ajvee'>Github</a>
-           
-                </p>
+                   I am a future full stack software developer that resides in Queens, NY. I am currently studying at Pursuit, where I look forward to honing my skills.  
+                   </p>               
                 </div>
                 </div>
-            </div>
+                </div>
         <div className='about-card'>
              <div className='about-max'>
                 <h2>Max Wattanachaiyot</h2>
@@ -47,7 +46,7 @@ export default function About() {
                 </p>
                 </div>
                 </div>
-        </div>
+                </div>
         </div>
     )
 }
