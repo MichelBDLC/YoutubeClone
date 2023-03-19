@@ -1,5 +1,6 @@
 // import './About.css'
 import img from './IMG_9882.JPG';
+import max from "./Max.jpg"
 
 export default function About() {
     return (
@@ -22,11 +23,12 @@ export default function About() {
             </div>
 
             <div className='about-max'>
-                <h2> Student 2 </h2>
-                {/* <img insert img of me here /> */}
+                <h2> Max Wattanachaiyot </h2>
+                <img src={max}/>
                 <p>
                     {/* insert small bio of me here
                     inlcude social media links (linkedin, github) */}
+                    <a href="https://github.com/maxwattan"> Github </a>
                 </p>
             </div>
 
