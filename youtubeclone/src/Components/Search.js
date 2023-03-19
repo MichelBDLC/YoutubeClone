@@ -37,6 +37,7 @@ export default function Search() {
         .then((searchInputData) => {
 
             setTheResponse(searchInputData.items);
+            //console.log(theResponse)
         })
         .catch((error) => {
             console.log(error);
@@ -49,7 +50,7 @@ export default function Search() {
         <button onClick={searchButton}> Search </button>
         <br />
         <div>
-            <Cardvideos handlesearchInput={handlesearchInput} searchButton={searchButton} theResponse={theResponse} />
+            <Cardvideos handlesearchInput={handlesearchInput} searchButton={searchButton} theResponse={theResponse} apiKey={apiKey}/>
         </div>
         </>
     )
