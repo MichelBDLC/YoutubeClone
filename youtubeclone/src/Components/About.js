@@ -15,11 +15,10 @@ export default function About() {
           <div className='about-card'>
             <div className='about-angel'>
                 <h2>Angel Villa</h2>
-                <a href='https://github.com/ajvee'>Github</a>
                 <img src={AngelVilla} alt="Angel-img" width={150}></img>
                 <div className='bio-card'>
                 <p>
-                   I am a future full stack software developer that resides in Queens, NY. I am currently studying at Pursuit, where I look forward to honing my skills.  
+                <a href='https://github.com/ajvee'>Github</a>
                    </p>               
                 </div>
                 </div>
