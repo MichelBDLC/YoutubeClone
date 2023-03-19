@@ -12,7 +12,7 @@ export default function About() {
                    This Project.....................................
                 </p>
             </div>
-          <div className='card'>
+          <div className='about-card'>
             <div className='about-angel'>
                 <h2>Angel Villa</h2>
                 <img src={AngelVilla} alt="Angel-img" width={150}></img>
@@ -25,7 +25,7 @@ export default function About() {
                 </div>
                 </div>
             </div>
-        <div className='card'>
+        <div className='about-card'>
              <div className='about-max'>
                 <h2>Max Wattanachaiyot</h2>
                 <img src={max} alt="Max-img" width={150}></img>
@@ -37,7 +37,7 @@ export default function About() {
                 </div>
                 </div>
 
-        <div className='card'>
+        <div className='about-card'>
              <div className="about-Michel">
                 <h2>Michel Batista</h2>
                 <img src={img} alt="Michel-img" width={150}></img>
