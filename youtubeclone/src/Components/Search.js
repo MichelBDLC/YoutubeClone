@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Cardvideos from "./Cardvideos";
-import './Search.css';
+import './css/Search.css';
 
 export default function Search() {
 
@@ -46,8 +46,10 @@ export default function Search() {
 
     return (
         <>
+        <div className="search-form">
         <input className="search-bar" type="search" onKeyUp={(event) => handlesearchInput(event)} placeholder="What would you like to watch?" />
         <button onClick={searchButton}> Search </button>
+        </div>
         <br />
         <div className="cards">
             <Cardvideos handlesearchInput={handlesearchInput} searchButton={searchButton} theResponse={theResponse} apiKey={apiKey}/>

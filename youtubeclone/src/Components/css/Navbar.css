@@ -15,47 +15,25 @@ img {
     border-color: whitesmoke;
     margin-right: 20px;
 }
+
 div .navigation span {
 color: black;
 text-decoration: none;
 margin-right: 20px;
 }
-/* div .navigation span:hover {
-    color: white;
-} */
 
 .youtubeH2 {
     color: white;
-    margin-right: 20px;
-    
+    margin-right: 20px; 
 }
 
 .youtubeH2:hover {
 color: black;
 }
 
-/* header ul {
-    list-style: none;
-    text-decoration: none;
-} */
-
-/* .NavLink { */
-    /* float: left; */
-    /* text-decoration: none;
-    color: black; */
-    /* padding-bottom: 25px; */
-/* } */
 .NavLink:hover {
     color: black;
 }
 
-/* header article a {
-    color: white;
-    text-decoration: none;
-    
-} */
 
-/* header ul li a:hover{
-    color: #241715
-} */
 

@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-import './Search.css';
-import './Video.css';
+import './css/Search.css';
+import './css/Video.css';
 
 export default function Video(props) {
 

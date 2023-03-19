@@ -1,5 +1,5 @@
 import Video from "./Video";
-import "./Search.css"
+import "./css/Search.css"
 
 export default function Cardvideos(props) {
 
