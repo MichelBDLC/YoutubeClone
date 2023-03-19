@@ -1,23 +1,27 @@
-// import { useState } from "react";
+import Video from "./Video";
 
-// export default function Cardvideos(items) {
 
-    //const [searchStatus, setSearchStatus] = useState("Make a search to watch videos");
+export default function Cardvideos(props) {
 
-    //const [searchMade, setSearchMade] = useState(false);
+    return (
+        <>
+            {
+            props.theResponse.map((video) => {
 
-    // if (searchMade == true) {
+                let videoId = video.id;
+                let videoTitle = video.snippet.title;
+                let videoDescription = video.snippet.description;
+                let videoChannelTitle = video.snippet.channelTitle;
+                let videoThumbnail = video.snippet.thumbnails.default.url;
 
-    //     setSearchMade(true);
-    //     setSearchStatus("Search Results:");
-    // }
-
-//     //generates individual Cardvideo 
-//     const data = ""
-
-//     return (
-//         <>
-//         {/* <h2> {searchStatus} </h2> */}
-//         </>
-//     )
-// }
+                return (
+                    <div key={videoId}>
+                    <Video videoId={videoId} videoThumbnail={videoThumbnail} videoTitle={videoTitle}
+                     videoDescription={videoDescription} videoChannelTitle={videoChannelTitle}/>
+                    </div>
+                )
+            }) 
+            }
+        </>
+    )
+}
