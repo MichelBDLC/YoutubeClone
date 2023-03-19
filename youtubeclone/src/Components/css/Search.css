@@ -1,11 +1,9 @@
-
 button {
     Background-color: red;
     Color: white;
     Margin: 1px;
-    /* font-family:"Roboto","Arial",sans-serif; */
     font-size: 1rem;
-    /* border-radius: 5px; */
+    border-radius: 5px;
     height: 25px;  
 }
 
@@ -17,34 +15,40 @@ input {
     width: 420px;
     height: 20px;
     border-radius: 1px;
+    margin-left: 450px
 }
 
-.card-img {
+.cards {
     display: grid;
     grid-template-columns: auto auto;
 }
 
- .card-img {
+.card {
     display: grid;
     text-align: center;
     grid-gap: 20px;
     background-color: whitesmoke;
     margin: 15px auto;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     max-width: 400px;
+    max-height: 400px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-size: 1.1rem;
     text-overflow: ellipsis;
     box-sizing: border-box;
     border-radius: 20px;
 }
-
 .card-img {
+    min-width: 100%;
+}
+
+.card {
     border-radius: 30px;
     width: 50%;
 } 
+
 
 

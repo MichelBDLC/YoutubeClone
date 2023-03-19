@@ -9,39 +9,31 @@ img {
     max-width: 70px;
     background: transparent;
     border-radius: 15px;
-    /* margin-right: 25px;  */
+    margin-right: 25px; 
     border-style: solid;
     border-width: thin;
     border-color: whitesmoke;
+    margin-right: 20px;
+}
+
+div .navigation span {
+color: black;
+text-decoration: none;
+margin-right: 20px;
 }
 
 .youtubeH2 {
     color: white;
-    
+    margin-right: 20px; 
 }
 
-/* header ul {
-    list-style: none;
-    text-decoration: none;
-} */
-
-.NavLink {
-    float: left;
-    /* text-decoration: none;
-    color: black; */
-    /* padding-bottom: 25px; */
+.youtubeH2:hover {
+color: black;
 }
+
 .NavLink:hover {
     color: black;
 }
 
-/* header article a {
-    color: white;
-    text-decoration: none;
-    
-} */
 
-/* header ul li a:hover{
-    color: #241715
-} */
 

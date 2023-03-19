@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-import './Navbar.css';
-import img from './youtube image.png'
+import './css/Navbar.css';
+import img from './assets/youtube image.png'
 
 export default function Navbar() {
 

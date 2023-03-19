@@ -1,10 +1,8 @@
 import { NavLink } from "react-router-dom";
-import './Search.css';
-import { Card } from "@mui/material";
+import './css/Search.css';
+import './css/Video.css';
 
 export default function Video(props) {
-
-    //const navigate = useNavigate();
 
     const dataTransfer = {
         theVideoId: props.videoId,
@@ -16,11 +14,9 @@ export default function Video(props) {
     };
 
     return (
-        <div className="cards">
-            <Card>
+        <div className="card">
             <NavLink to="/VideoAction" state={dataTransfer}> <img src={props.videoThumbnail} alt={props.videoTitle} className="card-img" /> </NavLink>
             <NavLink to="/VideoAction" state={dataTransfer}> <strong> {props.videoTitle} </strong> </NavLink>
-            </Card>
         </div>
     )
 }
