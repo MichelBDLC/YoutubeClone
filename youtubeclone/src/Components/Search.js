@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./SearchBar.css";
+import "./Search.css";
 
-export default function Searchbar(props) {
+export default function Search(props) {
 
     const [theResponse, setTheResponse] = useState([]);
     const [searchInput, setSearchInput] = useState([])

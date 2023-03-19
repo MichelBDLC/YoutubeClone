@@ -7,7 +7,32 @@ header {
  
 }
 
+header img {
+    background-color: lightgrey;
+    border-radius: 15px;
+    margin-right: 25px;
+    
+}
+
 header ul {
     list-style: none;
     text-decoration: none;
 }
+
+header article span {
+    float: left;
+    text-decoration: none;
+    color: black;
+
+}
+
+header article a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+header ul li a:hover{
+    color: #241715
+}
+

@@ -1,7 +1,7 @@
 
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import  Nav  from './Components/Navbar'
+import  Navbar  from './Components/Navbar'
 import About from './Components/About'
 import Home from "./Home/Home";
 import Fetch from "./Api/Fetch";
@@ -14,7 +14,7 @@ function App() {
     //     <Nav />
     //     <Routes>
     //       <Route path="/" element={<Home />} />
-    //       <Route path="/about" element={<About />} />
+          // <Route path="/about" element={<About />} />
     //       <Route path="/videos/:id" element={<Video />} />
 
     //     </Routes>
@@ -23,6 +23,7 @@ function App() {
     <div className="App">
       
       <Home />
+      
       {/* <header className="App-header">
 
       </header> */}

@@ -1,5 +1,5 @@
 import Navbar from "../Components/Navbar";
-import Searchbar from "../Components/Searchbar";
+import Search from "../Components/Search";
 import Cardvideos from "../Components/Cardvideos";
 import { useState } from "react";
 
@@ -15,7 +15,7 @@ export default function Home(props) {
         <br />
         <Navbar />
         <br />
-        <Searchbar Youtube={props.Youtube}/>
+        <Search Youtube={props.Youtube}/>
         <div>
         {/* <Cardvideos />
         cardvideos appear when search has been made useState  */}

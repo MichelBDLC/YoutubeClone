@@ -13,7 +13,7 @@ button {
 
 input {
     width: 420px;
-    height: 18px;
+    height: 20px;
     border-radius: 1px;
 }
 
@@ -26,7 +26,6 @@ div .cards {
 div .card {
     display: grid;
     text-align: center;
-    
     grid-gap: 20px;
     background-color: whitesmoke;
     margin: 15px auto;
@@ -44,7 +43,7 @@ div .card {
     
 }
 
-div .card img{
+div .card img {
     border-radius: 30px;
     width: 100%;
     
