@@ -1,4 +1,5 @@
-// import './About.css'
+import './About.css'
+import AngelVilla from './Angel Villa.jpg'
 
 export default function About() {
     return (
@@ -6,37 +7,43 @@ export default function About() {
             <div className='project-info'>
                 <h2> About Project </h2>
                 <p>
-                   {/* insert project description here
-                   include Github link */}
+                   This Project.....................................
                 </p>
             </div>
-
+          <div className='card'>
             <div className='about-angel'>
-                <h2> Student 2 </h2>
-                {/* <img insert img of me here /> */}
+                <h2>Angel Villa</h2>
+                <img src={AngelVilla} alt="Angel-img" width={150}></img>
+                <div className='bio-card'>
                 <p>
-                    {/* insert small bio of me here
-                    inlcude social media links (linkedin, github) */}
+                   I am a future full stack software developer that resides in Queens, NY. I am currently studying at Pursuit, where I look forward to honing my skills.              
                 </p>
+                </div>
+                </div>
             </div>
-
-            <div className='about-max'>
-                <h2> Student 2 </h2>
+        <div className='card'>
+             <div className='about-max'>
+                <h2>Max</h2>
                 {/* <img insert img of me here /> */}
+                <div className='bio-card'>
                 <p>
-                    {/* insert small bio of me here
-                    inlcude social media links (linkedin, github) */}
+                    TESTING
                 </p>
-            </div>
-
-            <div className="about-Michel">
-                <h2> Student 3 </h2>
-                {/* <img insert img of me here /> */}
-                <p>
-                   {/* insert project description here
-                   inlcude social media links (linkedin, github)*/}
-                </p>
-            </div>
+                </div>
+                </div>
         </div>
+
+        <div className='card'>
+             <div className="about-Michel">
+                <h2>Michel</h2>
+                {/* <img insert img of me here /> */}
+                <div className='bio-card'>
+                <p>
+                   TESTING
+                </p>
+                </div>
+                </div>
+        </div>
+    </div>
     )
 }

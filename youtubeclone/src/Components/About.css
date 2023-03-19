@@ -1,0 +1,84 @@
+.about-page {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.project-info {
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+.bio-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.about-angel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.about-angel h2 {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.about-angel img {
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+}
+
+.about-max {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.about-max h2 {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.about-max img {
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+}
+
+.about-michel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.about-michel h2 {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.about-michel img {
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+}
