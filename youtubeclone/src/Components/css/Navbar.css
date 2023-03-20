@@ -1,0 +1,39 @@
+.navigation {
+    display: flex;
+    background-color: red;
+    align-items: center;
+    padding: 25px;
+}
+
+img {
+    max-width: 70px;
+    background: transparent;
+    border-radius: 15px;
+    margin-right: 25px; 
+    border-style: solid;
+    border-width: thin;
+    border-color: whitesmoke;
+    margin-right: 20px;
+}
+
+div .navigation span {
+color: black;
+text-decoration: none;
+margin-right: 20px;
+}
+
+.youtubeH2 {
+    color: white;
+    margin-right: 20px; 
+}
+
+.youtubeH2:hover {
+color: black;
+}
+
+.NavLink:hover {
+    color: black;
+}
+
+
+

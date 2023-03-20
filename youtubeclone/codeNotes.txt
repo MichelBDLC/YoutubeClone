@@ -1,2 +1,0 @@
-1. Routing  will be used for routing to the 
-ind video for it to play. Not to directly send overto new pages

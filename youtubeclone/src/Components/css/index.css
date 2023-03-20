@@ -1,4 +1,5 @@
 body {
+  background-color: whitesmoke;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -8,6 +9,18 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Times New Roman', Times, monospace;
 }
+
+nav a {
+  margin-right: 16px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+nav a.active {
+  font-weight: bolder;
+}
+
+
+
