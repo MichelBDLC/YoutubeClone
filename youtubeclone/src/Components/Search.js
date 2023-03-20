@@ -8,12 +8,9 @@ export default function Search() {
 
     const [theResponse, setTheResponse] = useState([]);
 
-    const apiKey = `AIzaSyB_js3m_6Td1BiAELR-giue7aIRmzHegEM`
-    //process.env.apiKey
-    //`AIzaSyB_js3m_6Td1BiAELR-giue7aIRmzHegEM`;
+    const REACT_APP_API_KEY = `AIzaSyCCOOnK1xzLd422Rwm5jreWDIM6_V6HVWY`;
     //process.env.REACT_APP_API_KEY;
-
-    //const { REACT_APP_API_KEY } = process.env;
+    //`AIzaSyCCOOnK1xzLd422Rwm5jreWDIM6_V6HVWY`;
 
     function handlesearchInput(event) {
 
@@ -23,7 +20,7 @@ export default function Search() {
  
     }
 
-    const apiSearchUrl = `https://youtube.googleapis.com/youtube/v3/search?q=` + searchInput + `&part=snippet&maxResults=10&key=` + apiKey;
+    const apiSearchUrl = `https://youtube.googleapis.com/youtube/v3/search?q=` + searchInput + `&part=snippet&maxResults=10&key=` + REACT_APP_API_KEY;
 
     useEffect(() => {
         fetch(apiSearchUrl)
@@ -66,7 +63,7 @@ export default function Search() {
         </div>
         <br />
         <div className="cards">
-            <Cardvideos handlesearchInput={handlesearchInput} searchButton={searchButton} theResponse={theResponse} apiKey={apiKey}/>
+            <Cardvideos handlesearchInput={handlesearchInput} searchButton={searchButton} theResponse={theResponse} apiKey={REACT_APP_API_KEY}/>
         </div>
         </>
     )
