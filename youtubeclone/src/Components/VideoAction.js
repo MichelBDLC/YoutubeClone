@@ -18,7 +18,7 @@ export default function VideoAction() {
         title="YouTube video player" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         allowFullScreen></iframe> </div>
-        <div> <p> {location.state.videoChannel} </p> </div>
+        <div> <h3> Channel: {location.state.videoChannel} </h3> </div>
         <div> <p> {location.state.videoDescription} </p> </div>
         </div>
         </>
