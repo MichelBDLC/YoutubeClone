@@ -8,9 +8,7 @@ export default function Search() {
 
     const [theResponse, setTheResponse] = useState([]);
 
-    const REACT_APP_API_KEY = `AIzaSyCCOOnK1xzLd422Rwm5jreWDIM6_V6HVWY`;
-    //process.env.REACT_APP_API_KEY;
-    //`AIzaSyCCOOnK1xzLd422Rwm5jreWDIM6_V6HVWY`;
+    const REACT_APP_API_KEY = process.env.REACT_APP_API_KEY;
 
     function handlesearchInput(event) {
 
