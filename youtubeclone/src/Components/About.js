@@ -17,9 +17,8 @@ export default function About() {
                 <h2>Angel Villa</h2>
                 <img src={AngelVilla} alt="Angel-img" width={150}></img>
                 <div>
-                <p>
-                <a href='https://github.com/ajvee'>Github</a>
-                   </p>               
+                <p> Future FSWD hoping to help my fellow food service and retail industry workers by giving them a voice... </p>
+                <a href='https://github.com/ajvee'>Github</a>               
                 </div>
                 </div>
                 </div>
@@ -28,9 +27,13 @@ export default function About() {
                 <h2>Max Wattanachaiyot</h2>
                 <img src={max} alt="Max-img" width={150}></img>
                 <div>
-                <p>
-                <a href="https://github.com/maxwattan"> Github </a>
+                <p> I am pursuing software engineering because it is one of the industries that are constantly evolving that can make 
+                    a huge impact on our daily lives through technology. Aside from my technical skills, I am reliable, and professional. 
+                    I am passionate to help others connect with communities to improve themselves and the world. Outside of building javascript 
+                    codes some of my hobbies include: cooking, baking, fishing, exercising and stretching. In my next career, I would like to have
+                    a position which will allow me to apply and expand my skills while serving others and making this world a better place. 
                 </p>
+                <a href="https://github.com/maxwattan"> Github </a>
                 </div>
                 </div>
                 </div>
@@ -40,9 +43,10 @@ export default function About() {
                 <h2>Michel Batista</h2>
                 <img src={img} alt="Michel-img" width={150}></img>
                 <div>
-                <p>
-                <a href='https://github.com/MichelBDLC'> Github </a>
+                <p> Pursuing engineering for the love of technology & knowledge. Key strengths include creative problem-solving & 
+                    leadership.
                 </p>
+                <a href='https://github.com/MichelBDLC'> Github </a>
                 </div>
                 </div>
                 </div>

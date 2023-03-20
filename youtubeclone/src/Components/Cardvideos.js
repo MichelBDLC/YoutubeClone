@@ -15,7 +15,7 @@ export default function Cardvideos(props) {
                 let videoThumbnail = video.snippet.thumbnails.high.url;
 
                 return (
-                    <div key={Math.random()} classname="card">
+                    <div key={Math.random()} >
                     <br />
                     <Video videoId={videoId} video={video} apiKey={props.apiKey} videoThumbnail={videoThumbnail} videoTitle={videoTitle}
                      videoDescription={videoDescription} videoChannel={videoChannel}/>

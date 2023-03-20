@@ -8,11 +8,18 @@ export default function Search() {
 
     const [theResponse, setTheResponse] = useState([]);
 
-    const apiKey = `AIzaSyCeo8g49s2maafEoDNp3TxVfAPcABkRzI4`;
+    const apiKey = `AIzaSyB_js3m_6Td1BiAELR-giue7aIRmzHegEM`
+    //process.env.apiKey
+    //`AIzaSyB_js3m_6Td1BiAELR-giue7aIRmzHegEM`;
+    //process.env.REACT_APP_API_KEY;
+
+    //const { REACT_APP_API_KEY } = process.env;
 
     function handlesearchInput(event) {
 
         setSearchInput(event.target.value);
+
+        clearSearch();
  
     }
 
@@ -42,6 +49,13 @@ export default function Search() {
         .catch((error) => {
             console.log(error);
         })
+
+        clearSearch();
+    }
+
+    function clearSearch() {
+        
+        setSearchInput("");
     }
 
     return (
