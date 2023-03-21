@@ -14,8 +14,6 @@ export default function Search() {
     function handlesearchInput(event) {
 
         setSearchInput(event.target.value);
-
-        clearSearch();
  
     }
 
@@ -31,7 +29,7 @@ export default function Search() {
         .catch((error) => {
             console.log(error);
         })
-    }, [searchInput]);  
+    }, [searchInput]); 
 
     function searchButton(event) {
         event.preventDefault();
@@ -46,12 +44,6 @@ export default function Search() {
             console.log(error);
         })
 
-        clearSearch();
-    }
-
-    function clearSearch() {
-        
-        setSearchInput("");
     }
 
     return (
